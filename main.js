@@ -89,10 +89,13 @@ const IMMEDIATE_ACTION_ADVICE = [
 const MESSAGES_NUMBER = 25;
 
 // Function to return a random index
-const randSelector = () => Math.floor(Math.random()*messagesNumber);
+const randG = () => Math.floor(Math.random()*MESSAGES_NUMBER);
 
 // Function to run the program for the user
-const generateWelcomeMessage = () => {
+const generateUserMessage = () => {
+    let broadThinking = BROAD_THINKING_PHRASES[randG()];
+    let reflection = SPECIAL_REFLECTION_PROMPTS[randG()];
+    let action = IMMEDIATE_ACTION_ADVICE[randG()];
 
     return `
   🌟 Welcome to Mindful Moments 🌟
@@ -106,3 +109,4 @@ const generateWelcomeMessage = () => {
   Take what resonates, leave what doesn't.
   `;
 }
+
