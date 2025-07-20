@@ -1,4 +1,4 @@
-// Store the random messages globally
+// Globe variables
 const AriesSentences = [
   "The stars reveal a bold new opportunity coming your way next month - be ready to take the first step.",
   "Your fiery energy will attract an important figure into your life very soon - this connection will change everything.",
@@ -334,3 +334,8 @@ const PiscesSentences = [
   "Your imagination holds the key to solving a practical problem creatively.",
   "The universe is sending you love and healing - open your heart to receive it."
 ];
+
+const messagesNumber = 25;
+
+// Function to return a random index
+const randSelector = () => Math.floor(Math.random()*messagesNumber);
