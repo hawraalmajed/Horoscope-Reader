@@ -105,8 +105,7 @@ const generateUserMessage = () => {
   Reflection Prompt: ${reflection}
   
   Quick Action: ${action}
-  
-  Take what resonates, leave what doesn't.
   `;
 }
 
+console.log(generateUserMessage());
